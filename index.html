@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        
+        <meta name="description" content="Klasifikasi Terhadap Indikasi Terorisme Di
+		Sosial Media Menggunakan Algoritma Naive" />
+        <!-- <meta name="author" content="Luis García Castro" />
+        <meta name="keywords" content="Presentation, Deuda Técnica, Technical Debt, Presentación, Seminario" /> -->
+        <meta name="author" content="Adam" />
+        <meta name="keywords" content="Presentation, Seminar, Proposal" />  
+        <title>Klasifikasi Terhadap Indikasi Terorisme Di
+Sosial Media Menggunakan Algoritma Naive
+Bayes </title>
+        
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<!-- <link rel="shortcut icon" href="favicon.png" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" /> -->
+    </head>
+    <body class="impress-not-supported">
+
+	<div class="fallback-message">
+		<!-- <script>
+			alert('gunakan browser rekomendasi (Firefox, Chrome, Safari) terbaru ya:)')
+		</script> -->
+		<p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    	<p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+	</div>
+
+	<div id="impress">
+
+		<div id="title" class="step slide with_height" data-x="3600" data-y="1500" data-z="1000" data-scale="5" data-rotate-x="-25" >
+			<div class="author-sk">
+				<!--<p>Seminar Proposal <br> Ilmu Komputer UINSU<br />Agustus 2020</p>
+				<!--<p>Allaah Ada Tanpa Tempat</p>--> 
+			</div>
+			<div class="title-sk">
+				<p>KOMPARASI ALGORITMA SUPPORT VECTOR MACHNINE DAN
+					ARTIFICAL NEURAL NETWORK DALAM KLASIFIKASI
+					WEB PHISING</p>
+			</div>
+			<div class="subtitle-sk">
+				<p>Adam Falizufa Sagara-2117000002</p>
+				<div class="author-sk">
+					<br><br>
+					<p>Seminar Proposal Tesis Universitas Potensi Utama</p>
+					<p>27 Juli 2022</p>
+				</div>
+			</div>
+			<div class="author-sk">
+				<!-- <p>Seminar Proposal Tesis Universitas Potensi Utama</p> -->
+				<!-- <p>27 Juli 2022</p> -->
+				<!-- <p style="font-size: larger;">bit.ly/klasifikasi-as</p> -->
+				<!-- <p>Allaah Ada Tanpa Tempat</p> --> 
+			</div>
+			<div class="event_logo"><br>
+				 <img src="https://potensi-utama.ac.id/storage/2017/12/logo-universitas-potensi-utama-1024x1024.jpg" alt= "logo UINSU" class="event_logo" /> 
+			</div>
+		</div>
+		
+		<div id="recurring-comment-1" class="step slide" data-x="-750" data-y="-3500" data-scale="3">
+			<div class="section-title">
+				<h3 class="green">Pembimbing</h3>
+				<h5>
+					<ol>
+						<li style="text-align: left;"> Prof. Ts. Dr. Teddy Surya Gunawan, SMIEEE, MIET, CEng, IPU, ASEAN Eng, ACPE </li>
+						<li style="text-align: left;"> Dr. Wanayumini, S. Kom, M. Kom </li>
+					</ol>
+				</h5>
+			</div>
+			<div class="section-image">
+				<center><img src="img/gifs/doubtful.gif" alt="" class="img_back fixed_height" /></center>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<!-- <li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li> -->
+				</ul>
+			</div>
+		</div>
+		<div id="recurring-comment-1" class="step slide" data-x="-750" data-y="-3500" data-scale="3">
+			<div class="section-title">
+				<h3 class="green">Yth, Dewan Penguji</h3>
+				<h6>
+					<ol>
+						<li style="text-align: left;"> Dr. Zakarias Situmorang, MT </li>	
+						<li style="text-align: left;"> Dr. Mhd Furqan, S.Si., M.Comp.Sc. </li>
+					</ol>
+				</h6>
+			</div>
+			<div class="section-image">
+				<center><img src="img/gifs/doubtful.gif" alt="" class="img_back fixed_height" /></center>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<!-- <li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li> -->
+				</ul>
+			</div>
+		</div>
+
+		<!-- <div id="introduction" class="step slide" data-y="3500" data-scale="5">
+			<div class="slide-title">Who am I</div>
+			<div class="slide-content">
+				<p id="name">
+					<em>Luis García Castro</em>
+				</p>
+				<p>Software Engineer @ Sopra Steria</p>
+				<br />
+				<p id="gplus">
+					<a href="https://twitter.com/luiyo">
+						<img src="img/social/twitter.png" alt="Google Plus" class="rounded_icon" />
+						twitter.com/luiyo
+					</a>
+				</p>
+				<p id="linkedin">
+					<a href="http://www.linkedin.com/in/LuisGC">
+						<img src="img/social/linkedin.png" alt="LinkedIn" class="rounded_icon" />
+						linkedin.com/in/LuisGC
+					</a>
+				</p>
+				<p id="github">
+					<a href="https://github.com/LuisGC">
+						<img src="img/social/github.png" alt="GitHub" class="rounded_icon" />
+						github.com/LuisGC
+					</a>
+				</p>
+				<br />
+				<p id="creativeCommons">
+					<a href="http://creativecommons.org/licenses/by-sa/3.0/es/">
+						<img src="img/creative-commons.png" alt="Creative Commons" class="rounded_icon" />
+						<span class="footer"><i>Creative Commons <em>CC-BY-SA</em> license</i></span>
+					</a>
+				</p>
+				<p id="openSource">
+					<a href="https://github.com/bartaz/impress.js">
+						<img src="img/open-source-logo.png" alt="Impress.js" class="rounded_icon" />
+						<span class="footer">Presentation made with the awesome Open Source tool <em>Impress.js</em></span>
+					</a>
+				</p>
+								
+			</div>
+		</div> -->
+
+		<!-- <div id="recurring-comments" class="step slide" data-x="-750" data-y="-3500" data-scale="3">
+			<div class="section-title">
+				<h4>Recurring comments</h4>
+			</div>
+			<div class="section-image">
+				<center><img src="img/gifs/doubtful.gif" alt="Without words" class="img_back fixed_height" /></center>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div> -->
+
+		<div id="recurring-comments-2" class="step slide" data-x="-750" data-y="-3500" data-z="-200" data-rotate-x="-10" data-scale="1">
+			<div class="section-title">
+				<h2 class="green">BAB I </h2><h2>PENDAHULUAN</h2> 
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<!-- <li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li> -->
+				</ul>
+			</div>
+		</div>
+
+		<!-- <div id="recurring-comments-3" class="step slide" data-x="-750" data-y="-3500" data-z="-300" data-rotate-x="20" data-scale="1">
+			<div class="section-title">
+				<p>I thought we had tested 
+				<br />
+				this module...</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-4" class="step slide" data-x="-750" data-y="-3500" data-z="-500" data-rotate-x="40" data-scale="1">
+			<div class="section-title">
+				<p>Fixing this will break that
+				<br />
+				...I think</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div> 
+
+		<div id="recurring-comments-5" class="step slide" data-x="-750" data-y="-3500" data-z="-700" data-rotate-x="60" data-scale="1">
+			<div class="section-title">
+				<p>Don't touch that!
+				<br />
+				last time someone touched $whatever broke</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-6" class="step slide" data-x="-750" data-y="-3500" data-z="-900" data-rotate-x="80" data-scale="1">
+			<div class="section-title">
+				<p>Write a comment and<br />we'll fix it later</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li><b>Write a TODO so it'll be fixed later</b></li>
+					<li><b>Write a comment there, just above the TODO</b></li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="recurring-comments-7" class="step slide" data-x="-750" data-y="-3500" data-z="-1100" data-rotate-x="100" data-scale="1">
+			<div class="section-title">
+				<p>OMG!
+				<br />
+				I just changed ONE line!</p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that... I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>-->
+		
+		<div id="reasons" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+			<div class="slide-title">Latar Belakang</div>
+			<div class="slide-content">
+				<li>Phising merupakan tindak kejahatan siber (cyber crime), dalam bentuk
+					penyamaran oleh seseorang atau organisasi yang menyerupai orang atau organisasi
+					yang sah, dalam memikat korban untuk memberikan data sensitif seperti informasi
+					pengenal pribadi, detail akun perbankan atau kata (Alkhalil et al., 2021).</li>
+
+				<li>Pada kuartal pertama tahun 2022, Anti-Phishing Working Group (APWG) mengamati bahwa total serangan phishing sebesar 1.025.968 dan ini kuartal terburuk (APWG, 2022)</li>
+			<!-- <img src="img/twit/2.png" width="800px auto"> -->
+				<!-- <ul class="lv0_indent">
+					<li>Some guidance to technical staff about how <em>business decissions</em> are made</li>
+					<li>Some guidance to business staff about how <em>technical decissions</em> are made</li>
+					<li>Help to manage technical debt in a more <em>explicit and transparent</em> manner</li>
+					<li>Raise <em>awareness</em> on this issue</li>
+				</ul> -->
+			</div>
+		</div>
+		<!-- <div id="reasons-jwb" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+			<div class="slide-title">Latar Belakang</div>
+			<div class="slide-content">
+				<img src="img/twit/2.png" width="800px auto">
+				<img src="img/syaikh.png" width="800px auto
+				<ul class="lv0_indent">
+					<li>Some guidance to technical staff about how <em>business decissions</em> are made</li>
+					<li>Some guidance to business staff about how <em>technical decissions</em> are made</li>
+					<li>Help to manage technical debt in a more <em>explicit and transparent</em> manner</li>
+					<li>Raise <em>awareness</em> on this issue</li>
+				</ul> 
+			</div> 
+		</div> -->
+		<!-- <div id="reason2" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+			<div class="slide-title">Latar Belakang</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>Terorisme merupakan fenomena kejahatan memiliki dimensi yang sangat kompleks. Faktor ekonomi, sosial, pendidikan, lingkungan dan politik serta keamanan merupakan pemicu lahirnya terorisme.</li>
+					<li>Buku, artikel, pidato dan khutbah yang mereka (ISIS) tulis tidak hanya disalin melalui <em><b>media sosial</b></em> tetapi juga dibukukan secara profesional melalui penerbitan yang dikelola oleh kelompok mereka (Sholeh, 2017)</li>
+				</ul>
+			
+			</div>
+		</div>
+		 -->
+		<div id="reason2" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+			<div class="slide-title">Latar Belakang</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>Ada banyak fitur yang terkandung dalam halaman web untuk membedakan halaman web phishing dan mana yang tidak. Beberapa fitur untuk menentukan itu merupakan web phising seperti : tidak memiliki SSL, URL yang terlalu panjang, URL yang memakai lebih dari 3 titik (dot),dan penggunaan penyingkat url untuk menyembunyikan dan menarik perhatian korban (Faris & Yazid, 2021)
+				</ul>
+			
+			</div>
+		</div>
+
+		<div id="reason2" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+			<div class="slide-title">Latar Belakang</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>Pemilihan algoritma SVM dan BP-NN untuk diterapkan ke dalam model
+						klasifikasi web phising pada penelitian ini didasari pada penelitian sebelumnya
+						yang sudah menerapkan algoritma SVM (Al-Shalabi, 2019; Eroğlu et al., 2019;
+						Irawan et al., 2021; Shikalgar et al., 2019; Yuda & Suputra, 2021), dan BP-NN
+						(Barus & Ronaldo, 2019; Ferreira et al., 2018; Pratiwi et al., 2018; Saravanan &
+						Subramanian, 2020; Sreenidhi et al., 2022) ke dalam masalah web phising.
+					</li>
+				</ul>
+			
+			</div>
+		</div>
+
+		<div id="reason2" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+			<div class="slide-title">Latar Belakang</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>Berdasarkan 5 penelitian yang membandingkan kedua algoritma ini, 3 penelitian menyatakan bahwa algoritma SVM memiliki kinerja lebih baik dan 2 penelitian menyatakan sebaliknya.Terlihat  algortima SVM sedikit lebih unggul dibandingkan BP-NN, sehingga menarik untuk dianalisa bagaimana perbandingan kedua algoritma ini pada model klasifikasi yang dibangun.
+					</li>
+					<!-- <li style="font-size: 30px">Dalam beberapa kasus, algoritma ANN dan SVM mempunyai tingkat akurasi yang tinggi dan lebih baik dibanding Naive Bayes. Kekurangan ini dikarenakan tahapan klasifikasi pada algoritma Naive Bayes lebih sederhana dibandingkan dengan tahapan SVM dan ANN, sehingga waktu yang dilakukan lebih cepat (Taufiq, 2019).</li> -->
+					<!-- <li style="font-size: 30px">Kinerjanya dapat dibandingkan antara decision tree dan neural network dalam beberapa aplikasi tertentu, tetapi kompleksitas komputasinya jauh lebih sedikit daripada yang algoritma yang lain (Ning, 2019.)
+					</li> -->
+					
+					<!-- <li>Hipotesa awal:<em>Naive Bayes lebih efisien digunakan untuk data yang banyak seperti dalam media sosial</em> 
+					</li> -->
+				</ul>
+			</div>
+		</div>
+
+		<div id="reason2" class="step slide" data-x="8000" data-y="-500" data-scale="4">
+			<div class="slide-title">Latar Belakang</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<li>
+						Penelitian ini bertujuan untuk membangun model klasifikasi web phising dengan menggunakan algoritma SVM dan BP-NN, serta menganalisa hasilnya menggunakan metode evaluasi k-fold cross validation. Nilai accuracy, precision, recall dan f-measure masing-masing algoritma digunakan sebagai pembanding untuk menentukan model yang memiliki kinerja terbaik dalam memecahkan masalah klasifikasi web phising.
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- <div id="content" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title centered-title">
+				<h3><em>Content</em></h3>
+			</div>
+			<div class="slide-content">
+				<ol class="lv2_indent">
+					<li><em>Introduction to technical debt</em></li>
+					<ul class="lv1_indent">
+						<li>Analogies with financial debt</li>
+						<li>Types of technical debt</li>
+						<li>Symptoms</li>
+						<li>Advantages and disadvantages</li>
+					</ul>
+					<li><em>How, when and why <i>borrow</i></em></li>
+					<ul class="lv1_indent">
+						<li>Avoiding unitended debt</li>
+						<li>How to borrow intentionally</li>
+						<li>Technical debt vs low quality code</li>
+					</ul>
+					<li><em>Paying off technical debt</em></li>
+				</ol>
+			</div>
+		</div>
+		
+		<div id="intro" class="step slide" data-x="9000" data-y="4200" data-rotate="90">
+			<div class="slide-title"><em>Introduction</em></div>
+			<div class="slide-content">
+				<p><i>&laquo;Shipping first time code is like going into <em>debt</em>. A little debt speeds development so long as it is paid back promptly with a rewrite. [...] The <em>danger</em> occurs when the debt is not repaid. Every minute spent on not-quite-right code counts as <em>interest</em> on that debt. Entire engineering organizations can be brought to a stand-still under the debt load of an unconsolidated implementation.&raquo;</i></p>
+				<p><b><em>Ward Cunningham</em>, March 1992</b></p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>"Ward" Cunningham is an American computer programmer who developed the first wiki.</li>
+					<li>You start writing an application. In the beginning there is no need for user roles. Everyone can do anything. At some point you start having two different permissions for a specific action. The tech team considers whether to create a full fledged permission system, but at this point it really looks like over engineering. Some time later another thing requires the differentiation of users, and then another and another. The solution is refactoring it to have a decent permission system. To make this refactoring will take way more time than just adding another method, but will simplify the code and make future permissions to be added with one line of code, or even by just adding a row in the database.
+					<ul>
+						<li>* 4 now (the permission), 22 later (the refactoring, that now is a bit more complicated)</li> 
+						<li>* 21 now (the refactoring), 0 later (the permission)</li>
+						<li>* 4 now (the permission), no refactoring at all, and then 5 for the next permissions, and then 6, 7… until the point a new refactoring is suggested, now costing 50-something</li>
+					</ul>
+					</li>
+				</ul>
+			</div>			
+		</div> 
+
+		<div id="analogies" class="step slide" data-x="8500" data-y="4200">
+			<div class="slide-title">Rumusan Masalah</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><p><em>Interest</em></p></li>
+					<li><p><em>Capital</em> pay off</p></li>
+					<li><p>Extending a <em>loan</em></p></li>
+					<li><p><em>Bankruptcy</em></p></li>
+					<li><p>Technical <em>inflation</em></p></li>
+					<li><p>Fiscal <em>amnesty</em></p></li>
+				</ul>
+			</div>
+			<div class="notes">
+				<ol type="a">
+					<li><b>Interest</b> - Every minute you spend with not very clean code</li>
+					<li><b>Capital Pay off</b> - Refactoring</li>
+					<li><b>Extending a loan</b> - Design negligencies</li>
+					<li><b>Bankruptcy</b> - Situation with an interest over the debt so large that it is impossible to move forward and we need a complete rewrite</li>
+					<li><b>Technical Inflation</b> - When the current level of our technology is old enough to lose compatibility with the rest of the industry</li>
+					<li><b>Fiscal Amnesty</b> - Discard prototypes, products or components and renounce to use them</li>
+				</ol>
+			</div>
+		</div>
+		-->
+
+		<div id="analogies" class="step slide" data-x="8500" data-y="4200">
+			<div class="slide-title">Rumusan Masalah</div>
+			<div class="slide-content">
+				<ol class="lv2_indent">
+					<li><p>Bagaimana cara membangun model yang dapat mengklasifikasikan situs yang termasuk ke dalam kategori web phising?</p></li>
+					<li><p>Bagaimana menerapkan algoritma SVM dan BP-NN dalam membangun model klasifikasi web phising?</p></li>
+				</ol>
+			</div>
+			<div class="notes">
+				<ol type="a">
+					
+				</ol>
+			</div>
+		</div>
+
+		<div id="analogies" class="step slide" data-x="8500" data-y="4200">
+			<div class="slide-title">Rumusan Masalah</div>
+			<div class="slide-content">
+				<ol start="3" class="lv2_indent">
+					<li><p>Bagaimana mengukur nilai accuracy, precision, recall dan f-measure dari hasil klasifikasi algoritma SVM dan BP-NN menggunakan teknik cross validation?</p></li>
+					<li><p>Algoritma mana yang terbaik antara SVM dan BP-NN dalam mengklasifikasikan web phising berdasarkan hasil analisa cross validation?</p></li>
+				</ol>
+			</div>
+			<div class="notes">
+				<ol type="a">
+					
+				</ol>
+			</div>
+		</div>
+
+		<div id="types-of-debt" class="step slide" data-x="7500" data-y="4200" data-rotate="90">
+			<div class="slide-title">Tujuan</div>
+			<div class="slide-content">
+				<ol class="lv0_indent">
+					<li>Membangun model klasifikasi situs yang termasuk ke dalam kategori web phising.</li>
+					<li>Menerapkan algoritma SVM dan BP-NN ke dalam model klasifikasi web phising</li>
+					<li>Mengukur hasil klasifikasi web phising antara algoritma SVM dan BP-NN menggunakan teknik cross validation.</li>
+					<li>Menganalisa nilai-nilai yang diperoleh dari cross validation untuk menentukan algoritma mana yang lebih baik antara SVM dan BP-NN dalam mengklasifikasikan web phising.</li>
+				</ol>
+			</div>
+			<div class="notes">
+				<ul>
+				<li><b>Intended</b>: “No time to do it multi-language, that will be done in the future”</li>
+				<li><b>Intended</b>: “No time to complete the tests, that will be done when we deploy this in PRO”</li>
+				<!-- <li><b>Not intended</b>: Letting someone to write code that does not follow a certain standard</li>
+				<li><b>Not intended</b>: An important design decission that ultimately fails</li>
+				<li><b>Not intended</b>: Left the junior programmer unsupervised</li>
+				<li><b>Design</b>: non optimal solutions, shortcuts</li>
+				<li><b>Tests</b>: Not many automatic tests and too many regression testing</li>
+				<li><b>Documentation</b>: Only a few properly know the system</li>
+				<li>Hardware, environments,... too many manual actions</li> -->
+				</ul>
+				 
+			</div>
+		</div>
+
+		<div id="symptoms" class="step slide" data-x="7000" data-y="4200">
+			<div class="slide-title">Manfaat</div>
+			<div class="slide-content">
+				<ol class="lv0_indent">
+					<li class="f-30px">Mengetahui proses dan hasil pengembangan model klasifikasi situs yang tergolong ke dalam kategori web phising.</li>
+					<li class="f-30px">Mengetahui proses dan hasil penerapan algoritma SVM dan BP-NN ke dalam model klasifikasi web phising.</li>
+					<li class="f-30px">Mengetahui proses dan hasil pengukuran nilai accuracy, precision, recall dan f-measure hasil klasifikasi algoritma SVM dan BP-NN, dengan menggunakan teknik cross validation.</li>
+					<li class="f-30px">Mengetahui algoritma yang terbaik antara SVM dan BP-NN dalam mengklasifikasikan web phising berdasarkan nilai-nilai yang diperoleh dari cross validation.</li>
+					<!-- 
+					<li><p>Repeated <em>delays</em> in deliveries</p></li>
+					<li><p><em>Duplicated code</em></p></li>
+					<li><p><em>Unreadable</em> code</p></li>
+					<li><p>Unstoppable increase in <em>bugs</em></p></li>
+					<li><p><em>Excessive stress</em> on each delivery</p></li>
+					<li><p><em>Fear</em> to touch the code</p></li>
+					<li><p><em>Outdated</em> libraries</p></li>
+					<li>...</li> -->
+				</ol>
+			</div>
+			<div class="notes">
+				<ol>
+					<li>Whenever we can, we measure productivity (Scrum)</li>
+					<li>We spend too much time in regression testing</li>
+					<!-- <li>It is increasingly difficult to meet the deadlines</li>
+					<li>Leads to anomalies and support problems</li>
+					<li>Lack of quality and control</li>
+					<li>The teams suffers too much pressure</li>
+					<li>80% of of the time is spent reading code, if not understood can not be built</li>
+					<li>It's all so delicate that there is no way to touch without breaking anything</li>
+					<li>We are not able to update versions</li> -->
+				</ol>
+			</div>
+		</div>
+
+		<div id="advantages-and-disadvantages" class="step slide" data-x="5800" data-y="4200" data-rotate="-90">
+			<div class="slide-title">Batasan Masalah</em></div>
+			<div class="slide-content">
+				<ol class="lv0_indent">
+					<li>Dataset yang digunakan dalam penelitian dibatasi pada data situs, baik yang merupakan situs web phising dan yang bukan web phising, dari Kaggle.</li>
+					<li>Fungsi kernel yang digunakan pada algoritma SVM adalah gaussian radial basis function (RBF) dan sigmoid.</li>
+					<li>Fungsi aktivasi yang digunakan pada algoritma BP-NN adalah ReLu dan sigmoid, sedangkan fungsi optimasi yang digunakan adalah Adam dan stochastic gradient descent (SGD).</li>
+					<!-- <li>
+						<p>Some advantages:</p>
+						<ul class="lv0_indent">
+							<li>It shortens <em>Time To Market</em></li>
+							<li>It preserves the company <em>capital</em> (essential in startups)</li>
+							<li>Certain decisions and costs are <em>postponed</em></li>
+						</ul> 
+					</li>
+					<li>
+						<p>And some disadvantages:</p>
+						<ul class="lv0_indent">
+							<li>Reduces <em>speed</em> and <em>productivity</em></li>
+							<li>Increases the <em>risk</em></li>
+							<li><em>Restricts</em> new developments</li>
+							<li>Leads to a <em>vicious circle</em></li>
+						</ul> 
+					</li> -->
+				</ol>
+			</div>
+			<div class="notes">
+			</div>
+		</div>
+
+		<div id="advantages-and-disadvantages" class="step slide" data-x="5800" data-y="4200" data-rotate="-90">
+			<div class="slide-title">Batasan Masalah</em></div>
+			<div class="slide-content">
+				<ol start="4" class="lv0_indent">
+					<li>Output klasifikasi yang dihasilkan dibatasi pada kategori situs dalam bentuk “web phising” atau “bukan web phising” berdasarkan kriteria klasifikasi yang sudah ditentukan sebelumnya.</li>
+					<li>Output analisa yang dihasilkan dibatasi pada nilai accuracy, precision, recall dan f-measure masing-masing kombinasi fungsi aktivasi menggunakan teknik cross validation.</li>
+					<li>Nilai fold yang digunakan pada teknik cross validation dibatasi pada nilai 5, 10 dan 20.</li>
+				</ol>
+			</div>
+			<div class="notes">
+			</div>
+		</div>
+
+		<div id="recurring-comments-ii" class="step slide" data-x="-750" data-y="-3500" data-z="-200" data-rotate-x="-10" data-scale="1">
+			<div class="section-title">
+				<h2 class="green">BAB II </h2><h2>LANDASAN TEORI</h2>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- <div id="how-when-why" class="step slide" data-x="8000" data-y="-3500" data-scale="3">
+			<div class="section-title centered-title">
+				<p>How, when and why</p>
+			</div>
+			<div class="section-image">
+				<br /><br />
+				<center><img src="img/gifs/why_not.gif" alt="Why not" class="img_back fixed_height" /></center>
+			</div>
+			<div class="notes">
+				<p>Exercise: Draw your technical curve (<a href="http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt">link</a>)</p>
+				<ul>
+					<li>Real curve vs desired curve</li>
+					<li>old debt is bad and new debt is good</li>
+					<li>The <b>real</b> curve (chainshaw)</li>
+					<li>Debt baseline and debt ceiling</li>
+					<li>TDD and Scrum help</li>
+				</ul>
+			</div>
+		</div> -->
+
+		<div id="avoiding-unintended-debt" class="step slide" data-x="5900" data-y="5200">
+			<div class="slide-title">Machine Learning</div>
+			<div class="slide-content">
+				<ul>
+					Machine learning  berfokus pada pengembangan program komputer yang dapat mengajarkan dirinya sendiri untuk tumbuh dan berubah bila diberikan data baru.
+					Pembelajaran Mesin atau machine learning sudah diaplikasikan pada banyak hal, baik untuk klasifikasi gambar, mobil tanpa pengemudi, klasifikasi berita, dan sebagainya (Putra, 2019).
+					<!--Algoritma pembelajaran mesin terbagi hasil yang diinginkan yaitu : supervised learning, unsupervised learning, semi supervised learning, reinforcement learning, transduction, learning to learn.-->
+					<!-- <li><p>Automate tests as much as possible (<em>CI</em> )</p></li>
+					<li><p><em>Share</em> the knowledge (technical and functional)</p></li>
+					<li><p>Leave the code <em>cleaner</em> than you found it</p></li>
+					<li><p>Settle on a good <em>DoD</em></p></li>
+					<li><p>Aim for <em>Kaizen</em>: TDD, BDD, Fail Fast, Peer Reviews, Code Reviews, ...</p></li>
+					<li><p>Limit the <em>WIP</em>. Always!</p></li>
+					<li><p><em>Monitor</em> the debt at every moment</p></li>
+					<li><p>And finally: <em>Never ask for permission to do your job properly!</em></p></li> -->
+				</ul>
+			</div>
+		</div>
+		
+		<div id="how-to-borrow" class="step slide" data-x="5900" data-y="5800" data-rotate="180">
+			<div class="slide-title">Terorisme</em></div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<p>Menurut Kamus Besar Bahasa Indonesia, teror adalah usaha menciptakan ketakutan, kengerian, dan kekejaman oleh seseorang atau golongan. Beberapa narasi yang menunjukkan indikasi terorisme yaitu (Tahir et al,. 2020) :<br>
+• Harus memilih teman dan atasan yang mempunyai satu keyakinan.<br>
+• Pemerintah yang ada tidak memihak bahkan memusuhi agama.<br>
+• Perlunya perjuangan untuk mengganti dasar-dasar negara dan pemerintah.</p>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="how-to-borrow" class="step slide" data-x="5900" data-y="5800" data-rotate="180">
+			<div class="slide-title">Text Mining</em></div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<p>Penambangan Teks atau Text Mining adalah penemuan oleh komputer akan informasi baru yang sebelumnya tidak dikenal, dengan secara otomatis mengekstraksi informasi dari sumber daya tertulis yang berbeda. Elemen kunci adalah menghubungkan bersama informasi yang diekstraksi bersama untuk membentuk fakta baru atau hipotesis baru untuk dieksplorasi lebih lanjut dengan cara eksperimen yang lebih konvensional (Hearst, 2003).</p>
+				</ul>
+			</div>
+		</div>
+
+		
+
+				<div id="avoiding-unintended-debt" class="step slide" data-x="5900" data-y="5200">
+			<div class="slide-title">Preprocessing Data</div>
+			<div class="slide-content">
+				<ul>
+					Preprocessing merupakan tahapan proses dalam mempersiapkan data mentah yang  dapat  diolah  lebih  lanjut.  Praproses  data  dilakukan  dengan  cara  mengubah  data  yang  tidak  sesuai,  menjadi  bentuk  yang  lebih  mudah  diproses  oleh  sistem.
+				</ul>
+			</div>
+		</div>
+		
+		<div id="how-to-borrow" class="step slide" data-x="5900" data-y="5800" data-rotate="180">
+			<div class="slide-title">Naive Bayes</em></div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					Naive Bayes adalah salah satu algoritma supervised learning (terarah). Naive Bayes didasarkan pada asumsi penyederhanaan bahwa nilai atribut secara kondisional saling bebas jika diberikan nilai output. Dengan kata lain, diberikan nilai output, probabilitas mengamati secara bersama adalah produk dari probabilitas individu(Harman, 2013).  
+					<img src="img/nb.png" width="530px auto">
+				
+				</ul>
+			</div>
+		</div>
+
+				<div id="avoiding-unintended-debt" class="step slide" data-x="5900" data-y="5200">
+			<div class="slide-title">Python</div>
+			<div class="slide-content">
+				<ul>
+					Python adalah bahasa pemrograman yang ditafsirkan, interaktif, dan berorientasi objek. Ini mencakup modul, pengetikan dinamis, tipe data dinamis tingkat sangat tinggi dan lainnya.
+					Python itu portabel: Ia berjalan pada banyak varian Unix, pada Mac, dan pada Windows 2000 dan yang lebih baru.
+
+				</ul>
+			</div>
+		</div>
+		
+		<div id="how-to-borrow" class="step slide" data-x="5900" data-y="5800" data-rotate="180">
+			<div class="slide-title">Twitter</em></div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					Twitter adalah jejaring sosial dan micro-blogging, yang memfasilitasi Anda, sebagai pengguna, dapat memberikan update (perbaruan) informasi tentang diri Anda, bisnis, dan lainnya. Setiap Anda menulis status pada Twitter, status tersebut disebut sebagai tweets. Tweets merupakan penulisan teks berbasis 140 karakter, akan tetapi pada tanggal 07 November 2017 bertambah hingga 280 karakter. 
+				</ul>
+			</div>
+		</div>
+
+		<div id="technical-debt-vs-bad-code" class="step slide" data-x="8800" data-y="5300" data-rotate-z="90" data-scale="2">
+			<div class="section-title">
+				<h2 class="green">BAB III </h2><h2>METODE PENELITIAN</h2>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Didn't we document this services?</li>
+					<li>I thought we'd tested this module...</li>
+					<li>Fixing this will break that ...I think</li>
+					<li>Don't touch that, last time someone touched $whatever broke</li>
+					<li>Write a comment and we'll fix it later</li>
+					<li>Write a TODO so it'll be fixed later</li>
+					<li>Write a comment there, just above the TODO</li>
+					<li>I just changed ONE line!</li>
+				</ul>
+			</div>
+			<!-- <div class="section-title">
+				<p><em>Technical debt <br />vs <br />Low quality code</em></p>
+			</div>
+			<div class="notes">
+				<ul>
+					<li>Technical debt can be paid by refactoring. It takes time but it’s doable. But when code is just bad, refactoring is <b>way, way harder</b>.</li>
+					<li><b>Michael Feathers</b>, have defined legacy code as code without tests: 
+						<blockquote>“Code without tests is bad code.
+						It doesn’t matter how well written it is; it doesn’t matter
+						how pretty or object-oriented or well-encapsulated it is.
+						With tests, we can change the behavior of our code quickly and verifiably.
+						Without them, we really don’t know if our code is getting better or worse.”</blockquote></li>
+				</ul>
+			</div> -->
+		</div>
+
+		<!-- <div id="paying-technical-debt" class="step slide" data-x="-250" data-y="-1500" data-scale="3">
+			<div class="section-title">
+				<h3><em>Paying off</em>  technical debt</h3>
+			</div>
+			<div class="section-image">
+				<br /><br />
+				<center><img src="img/gifs/developer.gif" alt="Developer" class="img_back fixed_height" /></center>
+			</div>
+			<div class="notes">
+				<p>When developers propose a big rewrite, and for whatever crazy reasons, business agrees, the stage is set for a new kind of failure:</p>
+				<ul>
+					<li>It turns out that it’s virtually impossible to track all functionality in a legacy code base, and <b>few rewrite projects take the huge necessary time to document everything</b>.</li>
+					<li>Business will ask is about deadlines. Estimating a big rewrite is probably one of the most <b>unrealistic</b> things one can try to do.</li>
+					<li><b>Business will not accept all new features to be halted</b>. Therefore there will be the need to keep track of them, and to reimplement them as well. And all relevant data should be migrated</li>
+					<li>In the rush to convince business, developers will promise all kinds of things, like that the refactoring will make the system faster, more robust or scalable…</li>
+					<li>Given part of the problem was developer’s inexperience in coding itself, how can they <b>guarantee</b> that now they know better?</li>
+					<li>Generally, planning is not a particular strength of the kind of project that ends up needing a rewrite. <b>Will the rewrite be properly planned?</b></li>
+				</ul>
+			</div>
+		</div> -->
+		
+		<div id="before-paying-the-debt" class="step slide" data-x="-1000" data-y="500" data-rotate="-90" data-scale="2">
+			<div class="slide-title">Tempat Dan Waktu</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					<img height="500px auto" src="img/tb2.png">
+				</ul>
+			</div>
+		</div>
+
+		<div id="how-to-pay-off" class="step slide" data-x="500" data-y="500" data-rotate="90" data-scale="2">
+			<div class="slide-title">Bahan Dan Alat</div>
+			<div class="slide-content">
+				<ol class="lv0_indent">
+					<em>Bahan</em> 
+					<p style="font-size: 30px">tweet dari sosial media twitter yang diberikan label indikasi terorisme</p>
+					<!-- <li>Discuss with the <em>technicians</em> in charge your proposal and its scope</li>
+					<li><em>Measure</em> with them the debt you want to pay</li>
+					<li>Clearly communicate the <em>implications</em> to the business managers</li>
+					<li>Achieve <em>explicit</em> decisions about wheter to pay off <em>more or less</em> debt</li>
+					<li>Design strategies to avoid generating <em>new debt</em> when paying off</li>
+					<li>Take <em>explicit</em> decisions about <em>when and how</em> you will pay off</li> -->
+				</ol>
+			</div>
+		</div>
+
+		<div id="how-to-pay-off" class="step slide" data-x="500" data-y="500" data-rotate="90" data-scale="2">
+			<div class="slide-title">Bahan Dan Alat</div>
+			<div class="slide-content">
+				<ol class="lv0_indent">
+					<em>Alat</em>
+					<ol>
+						<li>
+							Perangkat Keras
+							<ul style="font-size: 30px">
+								<li>Laptop dengan processor AMD A6-9225 RADEON R4</li>
+								<li>Memory 4 GB</li>
+								<li>SSD 240GB</li>
+
+							</ul>
+						</li>
+						<li>
+							Perangkat Lunak
+							<ul style="font-size: 30px">
+								<li>OS PopOS 20.04</li>
+								<li>Bahasa Python 3.x.x</li>
+								<li>VS Code</li>
+							</ul>
+						</li>
+					</ol>
+					<!-- <li>Discuss with the <em>technicians</em> in charge your proposal and its scope</li>
+					<li><em>Measure</em> with them the debt you want to pay</li>
+					<li>Clearly communicate the <em>implications</em> to the business managers</li>
+					<li>Achieve <em>explicit</em> decisions about wheter to pay off <em>more or less</em> debt</li>
+					<li>Design strategies to avoid generating <em>new debt</em> when paying off</li>
+					<li>Take <em>explicit</em> decisions about <em>when and how</em> you will pay off</li> -->
+				</ol>
+			</div>
+		</div>
+
+	<!-- <div id="before-paying-the-debt" class="step slide" data-x="-1000" data-y="500" data-rotate="-90" data-scale="2">
+			<div class="slide-title">Prosedur Kerja</div>
+			<div class="slide-content">
+				<ul class="lv0_indent">
+					
+				</ul>
+			</div>
+		</div>
+ 			-->
+		<!-- <div id="survey" class="step slide" data-x="5300" data-y="-3500" data-scale="3" >
+			<div class="section-title">
+				<p>OK, but... <em>is it good or bad?</em></p>
+			</div>
+			<div class="section-image">
+				<center><img src="img/gifs/without_words.gif" alt="Without words" class="img_back fixed_height" /></center>
+			</div>			
+		</div> -->
+
+		<div id="content18" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Prosedur Kerja</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Tahap Perencanaan</em></li>
+					<ul class="lv1_indent">
+						<img height="500px auto" src="img/gb.png">
+						<!-- <li>Analogies with financial debt</li>
+						<li>Types of technical debt</li>
+						<li>Symptoms</li>
+						<li>Advantages and disadvantages</li> -->
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content18" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Prosedur Kerja</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Teknik Pengumpulan Data</em></li>
+					<ul class="lv1_indent">
+						<li>Studi literatur : untuk menganalisa dan membandingkan konten agar
+							menyamakan persepsi mengenai paham terindikasi teroris.</li>
+						<li>Observasi : mengambil langsung ke sosial media twitter dan
+							mengambil data tweet-tweet yang akan diteliti.</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content18" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Prosedur Kerja</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Analisis Kebutuhan</em></li>
+					<ul class="lv1_indent">
+						<li>Fungsi :Pengklasifikasi terhadap indikasi terorisme di sosial media dengan algoritma Naive Bayes.</li>
+						<li>Input  :Tweet-tweet yang dibutuhkan sebgai data latih yang diberi label terindikasi terorisme </li>
+						<li>Output :Keluaran yang harus dilakukan adalah mampu mengklasifikasikan tweet yang terindikasi terorisme</li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content18" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Prosedur Kerja</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Tahap Perancangan</em></li>
+					<ul class="lv1_indent">
+						perancangan flowchart, perancangan antar muka dan perancangan fungsi klasfikasi.
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content18" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Prosedur Kerja</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Tahap Pengujian</em></li>
+					<ul class="lv1_indent">
+						Setelah tweet telah melakukan praproses, tweet akan melakukan proses klasifikasi dengan algoritma Naive Bayes  di dalam sisitem yang telah dibuat.
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content18" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Prosedur Kerja</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Penggunaan</em></li>
+					<ul class="lv1_indent">
+						Menginput data-data tweet yang akan diuji untuk mengklasifikasikan tweet dan akun apakah terindikasi terorisme dengan menggunakan algoritma Naive Bayes.
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="visual-definition" class="step slide" data-x="2200" data-y="-3000" data-scale="3" >
+			<div class="section-title">
+				<h2 class="green">BAB IV <br></h2><h3>Hasil Dan Pembahasan</h3> 
+			</div>
+			<div class="notes">
+				<p>Ron Jeffries thinks it is always <b>BAD</b>:<p>
+				<ul>
+					<li>Agile software development is about turning “next time” into “this time”, as often and as frequently as we can. It’s about improving the design as often as we can, as soon as we can.</li>
+					<li>Sooner, or later, it seems, we’ll have an idea or an understanding that we can’t put in, because we, or the software, has moved on. But if we can put off that moment as long as possible, we’ll do better</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Input</em></li>
+					<ul class="lv1_indent">
+						Data latih sebanyak 30 data. Data yang diperoleh kemudian dibagi atas perbandingan antara label yang terindikasi dan label tidak terindikasi, yaitu 15 data dengan label terindikasi dan 15 data dengan label tidak terindikasi agar akurasi model klasifikasi dapat baik. Kemudian data melalui tahapan praproses.
+					</ul>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Proses</em></li>
+					<ul class="lv1_indent">
+						Data latih digunakan untuk membangun model menggunakan algoritma Naive Bayes. Model akan digunakan untuk data uji.
+					</ul>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<li><em>Output</em></li>
+					<ul class="lv1_indent">
+						Bagian output akan menunjukan hasil klasifikasi kelas data latih yang baru dan nilai yang didapatkan oleh model. Ada dua kelas yang akan diklasifikasikan yaitu terindikasi terorisme dan tidak terindikasi terorisme.
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<img src="img/proses.png" height="auto" alt="">
+				</ul>
+			</div>
+		</div>
+
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<p style="font-size:medium;">contoh tweet yang dikatakan tidak terindikasi</p>
+					<img src="img/indikasino.png" alt="">
+				</ul>
+			</div>
+		</div>
+
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<p style="font-size:medium;">contoh tweet yang dikatakan terindikasi</p>
+					<img src="img/indikasi.png" alt="">
+				</ul>
+			</div>
+		</div>
+
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<p style="font-size:large;">Hasil praproses</p>
+					<img src="img/praproses.png" width="80%" alt="">
+				</ul>
+			</div>
+		</div>
+
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<p style="font-size:large;">Tokenisasai Bag of Word</p>
+					<img src="img/tokenisasi.png" width="80%" alt="">
+				</ul>
+			</div>
+		</div>
+
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<p style="font-size:large;">Naive Bayes on Text Classification</p>
+					<img src="img/hitung.png" width="70%" alt="">
+				</ul>
+			</div>
+		</div>
+
+		<div id="content19" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Analisis Data</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<video id="vid" autoplay  width="120%" controls="controls">
+						<source src="img/vid/nb adam.mp4" type="video/mp4">
+						browser kamu tidak mendukung :(
+					</video>  
+					
+					
+				</ul>
+			</div>
+			<script>
+				document.getElementById('vid').play();
+			</script>
+		</div>
+		
+		<div id="content20" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Perancangan</h3><p style="font-size: x-large;">flowchart</p>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<ul class="">
+						<img src="img/flowchart.png" height="600em" alt="">
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content20" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Perancangan</h3><p style="font-size: x-large;">get API twitter</p>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<ul class="">
+						<img src="img/API.png" width="100%" alt="">
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content20" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Perancangan</h3><p style="font-size: x-large;">Antar Muka </p>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<ul class="">
+						<img src="img/mockup.png" width="100%" alt="">
+					</ul>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content20" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Perancangan</h3><p style="font-size: x-large;">Antar Muka </p>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<ul class="">
+						<video id="vid2" autoplay loop  width="120%" controls="controls">
+							<source src="img/vid/streamlit-main-2020-10-27-01-10-38.mp4" type="video/mp4">
+							browser kamu tidak mendukung :(
+						</video>  
+					</ul>
+				</ul>
+			</div>
+		</div>
+		<div id="visual-definition" class="step slide" data-x="2200" data-y="-3000" data-scale="3" >
+			<div class="section-title">
+				<h2 class="green">BAB V <br></h2><h3>Kesimpulan Dan Saran</h3> 
+			</div>
+			<div class="notes">
+				<p>Ron Jeffries thinks it is always <b>BAD</b>:<p>
+				<ul>
+					<li>Agile software development is about turning “next time” into “this time”, as often and as frequently as we can. It’s about improving the design as often as we can, as soon as we can.</li>
+					<li>Sooner, or later, it seems, we’ll have an idea or an understanding that we can’t put in, because we, or the software, has moved on. But if we can put off that moment as long as possible, we’ll do better</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content21" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Kesimpulan</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<ol class="lv1_indent">
+						
+						<li>Naive Bayes dapat digunakan sebagai klasifikasi untuk memisahkan dua label terindikasi terorisme dan yang bukan terindikasi terorisme.</li>
+						<li>Data yang diambil twitter dapat digunakan untuk mengklasifikan karena terdapat hasil yang diperoleh.</li>
+						<li>Hasil klasifikasi algoritma Naive Bayes untuk mengklasifikasikan pemahaman terorisme di sosial media dikategorikan baik.</li>
+					
+					</ol>
+				</ul>
+			</div>
+		</div>
+		<div id="content21" class="step slide" data-x="8100" data-y="2000" data-scale="5">
+			<div class="slide-title">
+				<h3>Saran</h3>
+			</div>
+			<div class="slide-content">
+				<ul class="lv2_indent">
+					<ol class="lv1_indent">
+						
+						<li>Penelitian selanjutnya bisa menggunakan sumber data lain yang terbuka atau menambah data yang telah diperoleh pada penelitian ini.</li>
+						<li>Penelitian selanjutnya bisa menggunakan metode yang berbeda seperti menggunakan metode pembobotan tf-idf</li>
+						<li>Penelitian selanjutnya bisa menggunakan algoritma klasifikasi lain seperti Support Vector Machine, K-Nearest Neighbor, dan lainnya.</li>
+					
+					</ol>
+				</ul>
+			</div>
+		</div>
+		<!-- <div id="visual-definition" class="step slide" data-x="2200" data-y="-3000" data-scale="3" >
+			<div class="slide-title">
+				<p>The most widespread opinion:</p>
+			</div>
+			<div class="slide-content">
+				<br /><br />
+				<center><img src="img/technical-debt-chart.jpg" alt="Visual definition of Technical Debt" class="img_back maxed_height" /></center>
+				<div class="source">
+					<p>Source: <a href="http://softwareengineeringdaily.com/2015/11/17/machine-learning-and-technical-debt-with-d-sculley/">Software Engineering Daily</a></p>
+				</div>
+			</div>
+			<div class="notes">
+				<p>Ron Jeffries thinks it is always <b>BAD</b>:<p>
+				<ul>
+					<li>Agile software development is about turning “next time” into “this time”, as often and as frequently as we can. It’s about improving the design as often as we can, as soon as we can.</li>
+					<li>Sooner, or later, it seems, we’ll have an idea or an understanding that we can’t put in, because we, or the software, has moved on. But if we can put off that moment as long as possible, we’ll do better</li>
+				</ul>
+			</div>
+		</div> -->
+
+		<!-- <div id="bibliography" class="step slide" data-x="3500" data-y="5000" data-scale="4">
+			<div class="slide-title centered-title">Bibliography</div>
+			<div class="slide-content">
+
+				<p class="bibliografia">
+					<a href="http://c2.com/doc/oopsla92.html">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Ward Cunningham</em>&nbsp;&nbsp;&nbsp; The WyCash Portfolio Management System
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="https://medium.com/@joaomilho/festina-lente-e29070811b84">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Joao Milho</em>&nbsp;&nbsp;&nbsp; Technical Debt 101
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://www.ontechnicaldebt.com/blog/steve-mcconnell-on-categorizing-managing-technical-debt/">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Steve McConnell</em>&nbsp;&nbsp;&nbsp; How to Categorize & Communicate Technical Debt
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://chadfowler.com/blog/2006/12/27/the-big-rewrite/">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Chad Fowler</em>&nbsp;&nbsp;&nbsp; The Big Rewrite
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Henrik Kniberg</em>&nbsp;&nbsp;&nbsp; Good and Bad Technical Debt
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://docs.codehaus.org/display/SONAR/Technical+Debt+Calculation">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Olivier Gaudin</em>&nbsp;&nbsp;&nbsp; Technical Debt plugin para Sonar
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://www.nytimes.com/2012/12/09/technology/air-force-stumbles-over-software-modernization-project.html">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>NYTimes</em>&nbsp;&nbsp;&nbsp; Billion-Dollar Flop: Air Force Stumbles on Software Plan
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://es.slideshare.net/lemiorhan/technical-debt-do-not-underestimate-the-danger">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Lemi Orhan Ergin</em>&nbsp;&nbsp;&nbsp; Technical Debt: Do Not Underestimate The Danger
+					</a>
+				</p>
+				<p class="bibliografia">
+					<a href="http://ronjeffries.com/articles/015-11/tech-debt/">
+						<img src="img/information.png" alt="Link to article" class="small_rounded_icon" /> 
+						<em>Ron Jeffries</em>&nbsp;&nbsp;&nbsp; Technical Debt – Bad metaphor or worst metaphor?
+					</a>
+				</p>
+			</div>
+		</div> -->
+		<div id="bibliography" class="step slide" data-x="3500" data-y="5000" data-scale="4">
+			<div class="slide-title centered-title">Daftar Pustaka</div>
+			<div class="slide-content">
+				<img src="img/dap1.png" width="50%">
+			</div>
+		</div>
+		<div id="bibliography" class="step slide" data-x="3500" data-y="5000" data-scale="4">
+			<div class="slide-title centered-title">Daftar Pustaka</div>
+			<div class="slide-content">
+				<img src="img/dap2.png" width="50%">
+			</div>
+		</div>
+		<!-- <div id="bibliography" class="step slide" data-x="3500" data-y="5000" data-scale="4">
+			<div class="slide-title centered-title">Daftar Pustaka</div>
+			<div class="slide-content">
+				<img src="img/dp3.png" width="800px auto">
+			</div>
+		</div> -->
+
+		<div id="questions" class="step slide" data-x="7300" data-y="5000" data-scale="3">
+			<div class="section-title">
+				<h3><em>Sekian & Terima Kasih</em></h3>
+			</div>
+			<div class="section-image">
+				<center><img src="img/gifs/thank_you.gif" alt="Thank you" class="img_back fixed_height" /></center>
+				<p style="font-size: x-large;">bit.ly/klasifikasi-as</p>
+				<cent
+			</div>			
+		</div>
+
+		<div id="overview" class="step" data-x="3500" data-y="2000" data-rotate-x="-25" data-scale="12"></div>
+		
+	</div>
+	<script src="js/impress.js"></script>
+	<script src="js/impressConsole.js"></script>
+	<script>
+		impress().init();
+		impressConsole().init(css="css/impressConsole.css");
+		//impressConsole().open(); // If you want them to open automatically
+	</script>
+
+    </body>
+</html>
